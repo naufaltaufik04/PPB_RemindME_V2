@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kalau error ubah jadi androidx.constraintlayout.widget.ConstraintLayout-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/primary">
+
+    <com.example.remindme.customComponent.SwipeDisabledViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.remindme.customComponent.SwipeDisabledViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/viewFloatingButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="685dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sortByDefaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/secondary"
+        android:clickable="true"
+        android:src="@drawable/ic_created"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFloatingButton"
+        app:layout_constraintEnd_toEndOf="@+id/viewFloatingButton"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/labelByDefault"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:background="#D9307FFF"
+        android:fontFamily="@font/ruluko"
+        android:gravity="left"
+        android:padding="7dp"
+        android:text="Sort by default"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sortByDefaultButton"
+        app:layout_constraintEnd_toStartOf="@+id/sortByDefaultButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sortByDefaultButton"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sortByDateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/secondary"
+        android:clickable="true"
+        android:src="@drawable/ic_date"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sortByDefaultButton"
+        app:layout_constraintEnd_toEndOf="@+id/sortByDefaultButton"
+        app:rippleColor="@color/white"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/labelByDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D9307FFF"
+        android:fontFamily="@font/ruluko"
+        android:gravity="left"
+        android:padding="7dp"
+        android:text="Sort by date"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sortByDateButton"
+        app:layout_constraintEnd_toEndOf="@+id/labelByDefault"
+        app:layout_constraintStart_toStartOf="@+id/labelByDefault"
+        app:layout_constraintTop_toTopOf="@+id/sortByDateButton"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sortByDifficultyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/secondary"
+        android:clickable="true"
+        android:src="@drawable/ic_difficulty"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sortByDateButton"
+        app:layout_constraintEnd_toEndOf="@+id/sortByDateButton"
+        app:rippleColor="@color/white"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/labelByDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D9307FFF"
+        android:fontFamily="@font/ruluko"
+        android:gravity="left"
+        android:padding="7dp"
+        android:text="Sort by difficulty"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sortByDifficultyButton"
+        app:layout_constraintEnd_toEndOf="@+id/labelByDate"
+        app:layout_constraintStart_toStartOf="@+id/labelByDate"
+        app:layout_constraintTop_toTopOf="@+id/sortByDifficultyButton"
+        tools:visibility="visible" />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+        app:mbn_backgroundBottomColor="#FFFFFF"
+        app:mbn_circleColor="@color/secondary"
+        app:mbn_countBackgroundColor="#B75093FF"
+        app:mbn_countTextColor="#FFFFFF"
+        app:mbn_defaultIconColor="@color/secondary"
+        app:mbn_selectedIconColor="#FFFFFF"
+        app:mbn_shadowColor="@color/shadow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

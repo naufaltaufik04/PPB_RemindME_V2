@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="difficulty_array">
+        <item></item>
+        <item>Sulit</item>
+        <item>Sedang</item>
+        <item>Mudah</item>
+        <item>Tidak ditentukan</item>
+    </string-array>
+</resources>
