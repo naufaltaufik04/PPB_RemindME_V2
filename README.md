@@ -1,5 +1,8 @@
 PREVIEW
 
+Merupakan Versi ke-2 dari versi RemindMe
+Dimana sudah mengimplementasikan semua mockup beserta dengan fungsi - fungsinya
+
 Home Page - Full Content | Home Page - Empty Content | Sorting Content |
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Home_full](https://user-images.githubusercontent.com/54460846/114391072-3ed3e680-9bc1-11eb-8fb2-24af29d6eb39.PNG) |  ![Home_empty](https://user-images.githubusercontent.com/54460846/114391081-41364080-9bc1-11eb-85bb-7ee2c51fed63.PNG)   | ![Sorting](https://user-images.githubusercontent.com/54460846/114391108-48f5e500-9bc1-11eb-844d-efb633102348.PNG)
